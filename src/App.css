@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body,
+input,
+button,
+textarea,
+a {
+  font: 500 1rem Noto Sans JP, sans-serif;
+  color: #f4f4f4;
+}
+
+#map {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 800px;
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.mapWrapper {
+  background: linear-gradient(to top, #e5e5be, #003973);
+
+  margin-top: 6rem;
+  margin-bottom: 50px;
+  height: calc(100vh - 147px);
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  color: black;
+}
+
+@media (max-width: 570px) {
+  .mapWrapper {
+    height: calc(100vh - 132px);
+  }
+}

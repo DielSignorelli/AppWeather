@@ -1,0 +1,173 @@
+.container {
+  margin-bottom: 8px;
+  border-bottom: 1px solid #dedede;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.details {
+  display: flex;
+  margin: 5px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  color: #1f1f1f;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.panelLeft {
+  margin-right: 12px;
+  margin-left: 4px;
+  flex: 50%;
+}
+
+.panelRight {
+  flex: 50%;
+  margin-right: 5px;
+}
+
+.panelLeft > p,
+.panelRight > p {
+  padding: 11px 0px 10px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dedede;
+}
+
+.panelLeft > p .value,
+.panelRight > p .value {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.33;
+  margin-left: auto;
+  padding-left: 8px;
+  text-align: right;
+}
+
+.panelLeft .detailsWind,
+.panelRight .detailsClouds {
+  display: none;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #1f1f1f;
+  background-color: #f4ffff;
+  padding: 16px 14px 16px 14px;
+}
+
+.date {
+  min-width: 52px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.date span {
+  display: block;
+}
+
+.sub {
+  color: #8b8b8b;
+  font-weight: 400;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.temp {
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.08;
+  width: 64px;
+  text-align: center;
+}
+
+.desc {
+  width: 140px;
+  font-size: 1.1rem;
+}
+
+.description {
+  color: #3f3f3f;
+}
+
+.clouds {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #3f3f3f;
+  display: flex;
+  align-items: center;
+  width: 80px;
+  justify-content: center;
+}
+
+.wind {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #3f3f3f;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: center;
+}
+
+.arrowUp {
+  width: 15px;
+  transform: rotate(180deg);
+}
+
+.arrowDown {
+  width: 15px;
+}
+
+@media (min-width: 1024px) {
+  .content {
+    cursor: pointer;
+  }
+
+  .icon {
+    font-size: 40px;
+    width: 60px;
+  }
+
+  .temp {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .desc,
+  .clouds,
+  .wind {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  .desc {
+    width: 118px;
+    font-size: 12px;
+  }
+
+  .details {
+    display: block;
+  }
+}
+
+@media (max-width: 540px) {
+  .clouds,
+  .wind {
+    display: none;
+  }
+
+  .panelLeft .detailsWind,
+  .panelRight .detailsClouds {
+    display: flex;
+  }
+}

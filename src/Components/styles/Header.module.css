@@ -1,0 +1,88 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
+.infobg {
+  background-color: #012a53;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 800px;
+}
+
+.menubg {
+  background-color: #002244;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  width: 90%;
+}
+
+.navBarLink {
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  padding-top: 2px;
+}
+
+.navBarLinkActive {
+  border-bottom: 2px solid #f4ffff;
+  transition: border-bottom 0.5s ease-in-out;
+  padding-top: 2px;
+}
+
+.navBarLink:hover {
+  transform: translateY(-2px);
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 9px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 0;
+  text-align: center;
+
+  background: #0f5397;
+  background-image: url('../../Assets//search-icon.png');
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position-y: -8px;
+  background-position-x: -12px;
+}
+
+input[type='text']::placeholder {
+  color: #f4ffffb7;
+  opacity: 0.8;
+}
+
+@media (max-width: 460px) {
+  .menubg {
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .menubg a + a {
+    flex: 0 0 auto;
+    margin: 0px 15px 0px 15px;
+  }
+}
